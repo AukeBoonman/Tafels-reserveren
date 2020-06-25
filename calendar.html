@@ -1,15 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
 <style>
-* {box-sizing: border-box;}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;}
 ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;}
+
+html{
+  color: #d35400;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+}
+body{
+  background-image: linear-gradient(rgba(12, 12, 12, 0),rgba(12, 12, 12, 1)), url(https://cdn.pixabay.com/photo/2014/06/11/17/00/cook-366875_1280.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  height: 100vh;
+  background-color:rgba(39, 39, 39, 0.9)
+}
+h1{
+  position: absolute;
+  font-family: 'Lato', sans-serif;
+  font-size: 300%;
+  font-weight: 300;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%);
+  text-transform: uppercase;
+}
+
+.calendar{
+  position: absolute;
+  width: 900px;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+}
 
 .month {
   padding: 70px 25px;
   width: 100%;
-  background: #1abc9c;
+  background: #e67e22;
   text-align: center;
 }
 
@@ -20,7 +55,7 @@ body {font-family: Verdana, sans-serif;}
 
 .month ul li {
   color: white;
-  font-size: 20px;
+  font-size: 110%;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
@@ -50,7 +85,7 @@ body {font-family: Verdana, sans-serif;}
 
 .days {
   padding: 10px 0;
-  background: #eee;
+  background: #ecf0f1;
   margin: 0;
 }
 
@@ -60,14 +95,18 @@ body {font-family: Verdana, sans-serif;}
   width: 13.6%;
   text-align: center;
   margin-bottom: 5px;
-  font-size:12px;
-  color: #777;
+}
+
+a{
+  text-decoration: none;
+  font-size: 80%;
+  color: rgb(99, 98, 98);
+  padding: 5px;
 }
 
 .days li:hover {
-  padding: 5px;
-  background: #1abc9c;
-  color: white !important
+  background: #f2bc8d;
+  color: #fff !important;
 }
 
 </style>
@@ -75,89 +114,90 @@ body {font-family: Verdana, sans-serif;}
 <body>
 
 <h1>Agenda</h1>
+<div class="calendar">
+    <div class="month">
+      <ul>
+        <li class="prev">&#10094;</li>
+        <li class="next">&#10095;</li>
+        <li>
+          Juli<br>
+          <span style="font-size:18px">2020</span>
+        </li>
+      </ul>
+    </div>
 
-<div class="month">
-  <ul>
-    <li class="prev">&#10094;</li>
-    <li class="next">&#10095;</li>
-    <li>
-      Juli<br>
-      <span style="font-size:18px">2020</span>
-    </li>
-  </ul>
+    <ul class="weekdays">
+      <li>Mo</li>
+      <li>Tu</li>
+      <li>We</li>
+      <li>Th</li>
+      <li>Fr</li>
+      <li>Sa</li>
+      <li>Su</li>
+    </ul>
+
+    <ul class="days">
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">1 </a></li>
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">1 </a></li>
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">2 </a></li>
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">3 </a></li>
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">4 </a></li>
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">5 </a></li>
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">6 </a></li>
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">7 </a></li>
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">8 </a></li>
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">9 </a></li>
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">10 </a></li>
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">11 </a></li>
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">12 </a></li>
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">13 </a></li>
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">14 </a></li>
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">15 </a></li>
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">16 </a></li>
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">17 </a></li>
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">18 </a></li>
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">19 </a></li>
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">20 </a></li>
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">21</a></li>
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">22</a></li>
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">23</a></li>
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">24</a></li>
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">25</a></li>
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">26</a></li>
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">27 </a></li>
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">28</a></li>
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">29</a></li>
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">30</a></li>
+      <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">31 </a></li>
+    </ul>
+
+    <br></br><label for="data">Kies een tijd:</label>
+
+    <select name="data_drop" id="cars">
+      <option value="1100">11:00</option>
+      <option value="1130">11:30</option>
+      <option value="1200">12:00</option>
+      <option value="1230">12:30</option>
+      <option value="1300">13:00</option>
+      <option value="1330">13:30</option>
+      <option value="1400">14:00</option>
+      <option value="1430">14:30</option>
+      <option value="1500">15:00</option>
+      <option value="1530">15:30</option>
+      <option value="1600">16:00</option>
+      <option value="1630">16:30</option>
+      <option value="1700">17:00</option>
+      <option value="1730">17:30</option>
+      <option value="1800">18:00</option>
+      <option value="1830">18:30</option>
+      <option value="1900">19:00</option>
+      <option value="1930">19:30</option>
+      <option value="2000">20:00</option>
+      <option value="2030">20:30</option>
+      <option value="2100">21:00</option>
+    </select>
+    <button onclick="window.location.href='file:///C:/Users/31636/Documents/WT/health.html'">Selecteren</button>
 </div>
-
-<ul class="weekdays">
-  <li>Mo</li>
-  <li>Tu</li>
-  <li>We</li>
-  <li>Th</li>
-  <li>Fr</li>
-  <li>Sa</li>
-  <li>Su</li>
-</ul>
-
-<ul class="days">
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">1 </a></li>
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">1 </a></li>
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">2 </a></li>
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">3 </a></li>
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">4 </a></li>
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">5 </a></li>
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">6 </a></li>
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">7 </a></li>
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">8 </a></li>
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">9 </a></li>
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">10 </a></li>
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">11 </a></li>
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">12 </a></li>
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">13 </a></li>
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">14 </a></li>
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">15 </a></li>
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">16 </a></li>
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">17 </a></li>
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">18 </a></li>
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">19 </a></li>
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">20 </a></li>
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">21</a></li>
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">22</a></li>
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">23</a></li>
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">24</a></li>
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">25</a></li>
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">26</a></li>
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">27 </a></li>
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">28</a></li>
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">29</a></li>
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">30</a></li>
-  <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">31 </a></li>
-</ul>
-
-<br></br><label for="data">Kies een tijd:</label>
-
-<select name="data_drop" id="cars">
-  <option value="1100">11:00</option>
-  <option value="1130">11:30</option>
-  <option value="1200">12:00</option>
-  <option value="1230">12:30</option>
-  <option value="1300">13:00</option>
-  <option value="1330">13:30</option>
-  <option value="1400">14:00</option>
-  <option value="1430">14:30</option>
-  <option value="1500">15:00</option>
-  <option value="1530">15:30</option>
-  <option value="1600">16:00</option>
-  <option value="1630">16:30</option>
-  <option value="1700">17:00</option>
-  <option value="1730">17:30</option>
-  <option value="1800">18:00</option>
-  <option value="1830">18:30</option>
-  <option value="1900">19:00</option>
-  <option value="1930">19:30</option>
-  <option value="2000">20:00</option>
-  <option value="2030">20:30</option>
-  <option value="2100">21:00</option>
-</select>
-<button onclick="window.location.href='file:///C:/Users/31636/Documents/WT/health.html'">Selecteren</button>
 
 </body>
 </html>

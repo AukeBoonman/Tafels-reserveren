@@ -1,56 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
         <style>
+            /* ---- MAIN ----- */
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            html{
+                color: #d35400;
+                font-family: 'Lato', sans-serif;
+                font-size: 20px;
+            }
+            body{
+                background-image: linear-gradient(rgba(85, 85, 85, 0),rgba(85, 85, 85, 0)), url(https://cdn.pixabay.com/photo/2014/06/11/17/00/cook-366875_1280.jpg);
+                                            /* other image option: https://images.unsplash.com/photo-1579027989536-b7b1f875659b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);*/
+                background-size: cover;
+                background-position: bottom;
+                height: 100vh;
+            }
             
             /* --------- HEADERS -------- */
             h1{
                 position: absolute;
                 font-family: 'Lato', sans-serif;
-                font-size: 50px;
+                font-size: 300%;
+                font-weight: 300;
                 left: 50%;
+                top: 15%;
                 transform: translate(-50%);
+                text-transform: uppercase;
             }
-            
-            .btn{
+
+            .btn:link,
+            .btn:visited{
                 text-decoration: none;
                 position: absolute;
                 left: 50%;
-                top: 50%;
+                top: 43%;
                 transform: translate(-50%,-50%);
-                border: 10px solid #555;
-                padding: 50px;
+                color: #d35400;
+                font-size: 140%;
+                font-weight: 700; 
+                border-radius: 200px;
+                border: 5px solid #d35400;
+                padding: 30px 35px;
+                transition: background-color 0.2s, border 0.2s, color 0.2s;
             }
-        
-        
+
+            .btn:hover,
+            .btn:active{
+                border: 5px solid #f39c12;
+                background-color: transparent;
+                color: #f39c12;
+                transition: background-color 0.2s, border 0.2s, color 0.2s;
+            }
+
+
+
+
+            
+
         </style>
         <title>Table Reservations</title>
     </head>
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
     <body>
-        <h1>Table reservations</h1>
-        <a class="btn" href="#">Klik hier om te reserveren</a>
-    
+        <h1>Tafel reserveren</h1>
+        <a class="btn" href="file:///C:/Users/31636/Documents/WT/pagina-2.html">Reserveer nu</a>
     </body>
 
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-

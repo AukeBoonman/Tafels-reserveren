@@ -1,20 +1,91 @@
 <html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <style>
+      /* ---- MAIN ----- */
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+      html{
+          color: #2e3434;
+          font-family: 'Lato', sans-serif;
+          font-size: 20px;
+      }
+      body{
+      background-image: linear-gradient(rgba(12, 12, 12, 0),rgba(12, 12, 12, 1)), url(https://cdn.pixabay.com/photo/2014/06/11/17/00/cook-366875_1280.jpg);
+      background-size: cover;
+      background-position: bottom;
+      background-attachment: fixed;
+      height: 100vh;
+      background-color:rgba(39, 39, 39, 0.9);
+    }
+
+    h1{
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      color: #d35400;
+      font-size: 175%;
+      font-weight: 300;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+
+    h2{
+      font-size: 150%;
+      font-weight: 300;
+      margin-bottom: 30px;
+    }
+
+    .health-questions{
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background-color: #ecf0f1c7;
+      width: 900px;
+      padding: 40px;
+    }
+
+    label{
+      padding-left: 10px;
+      line-height: 40px;
+      
+      word-spacing: 2px;
+    }
+
+    button{
+      font-family: 'Lato', sans-serif;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+    </style>
+  </head>
   <body>
-      <h1>Selecteer alles wat van toepassing is</h1>
-      <input type="checkbox" id="health1" value="hoesten">
-      <label for="health1"> Had u of iemand in uw gezelschap last van hoestklachten in de afgelopen 24 uur?</label><br>
-      <input type="checkbox" id="health2" value="niezen">
-      <label for="health2"> Had u of iemand in uw gezelschap last van neusverkoudheid in de afgelopen 24 uur?</label><br>
-      <input type="checkbox" id="health3"  value="benauwd">
-      <label for="health3"> Had u of iemand in uw gezelschap last van benauwdheidsklachten in de afgelopen 24 uur?</label><br>
-      <input type="checkbox" id="health4"  value="koorts">
-      <label for="health4"> Heeft u of iemand in uw gezelschap op dit moment een huisgenoot/gezinslid met koorts en/of benauwdheidsklachten?</label><br>
-      <input type="checkbox" id="health5"  value="corona">
-      <label for="health5"> Heeft u het coronavirus gehad en is dit de afgelopen 7 dagen vastgesteld?</label><br>
-      <input type="checkbox" id="health6"  value="isolatie">
-      <label for="health6"> Bent u in thuisisolatie omdat u direct contact hebt gehad met iemand waarbij het coronavirus is vastgesteld?</label><br>
-      <input type="checkbox" id="health7" value="huisgenoot">
-      <label for="health7"> Heeft u een huisgenoot/gezinslid met het coronavirus en heft u in de afgelopen 14 dagen contact met hem/haar gehad terwijl hij/zij nog klachten had?</label><br>
-      <button onclick="window.location.href='file:///C:/Users/31636/Documents/WT/reservation.html'">Verstuur</button>
+    <h1>Gezondheidsvragen</h1>
+    <div class="health-questions">
+      <h2>Selecteer alles wat van toepassing is</h1>
+        <input type="checkbox" id="health1" value="hoesten">
+        <label for="health1"> Had u of iemand in uw gezelschap last van hoestklachten in de afgelopen 24 uur?</label><br>
+        <input type="checkbox" id="health2" value="niezen">
+        <label for="health2"> Had u of iemand in uw gezelschap last van neusverkoudheid in de afgelopen 24 uur?</label><br>
+        <input type="checkbox" id="health3"  value="benauwd">
+        <label for="health3"> Had u of iemand in uw gezelschap last van benauwdheidsklachten in de afgelopen 24 uur?</label><br>
+        <input type="checkbox" id="health4"  value="koorts">
+        <label for="health4"> Heeft u of iemand in uw gezelschap op dit moment een huisgenoot/gezinslid met koorts en/of benauwdheidsklachten?</label><br>
+        <input type="checkbox" id="health5"  value="corona">
+        <label for="health5"> Heeft u het coronavirus gehad en is dit de afgelopen 7 dagen vastgesteld?</label><br>
+        <input type="checkbox" id="health6"  value="isolatie">
+        <label for="health6"> Bent u in thuisisolatie omdat u direct contact hebt gehad met iemand waarbij het coronavirus is vastgesteld?</label><br>
+        <input type="checkbox" id="health7" value="huisgenoot">
+        <label for="health7"> Heeft u een huisgenoot/gezinslid met het coronavirus en heft u in de afgelopen 14 dagen contact met hem/haar gehad terwijl hij/zij nog klachten had?</label><br>
+        <button onclick="window.location.href='file:///C:/Users/31636/Documents/WT/reservation.html'">Verstuur</button>
+
+        <!-- volgens mij is dit wel heel uitgebreid. Wat ik heb meegekregen vragen ze eigenlijk alleen of je verkoudheidsklachten hebt gehad of in contact bent geweest met iemand met Corona - totaal misschien 3 of 4 vragen maximaal... -->
+
+      </div>
   <body>
 </html>

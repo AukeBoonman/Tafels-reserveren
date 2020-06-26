@@ -12,6 +12,7 @@ ul {list-style-type: none;}
 html{
   color: #d35400;
   font-family: 'Lato', sans-serif;
+  font-weight: 300;
   font-size: 20px;
 }
 body{
@@ -34,11 +35,12 @@ h1{
 }
 
 .calendar{
-  position: absolute;
+  position: relative;
   width: 900px;
   left: 50%;
-  top: 55%;
+  top: 470px;
   transform: translate(-50%, -50%);
+  margin-bottom: 150px;
 }
 
 .month {
@@ -109,6 +111,79 @@ a{
   color: #fff !important;
 }
 
+.tijd{
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #e67d22;
+  color: #fff;
+  font-size: 120%;
+}
+
+.tijd label,
+.tijd select{
+  margin-right: 20px;
+  color: #fff;
+}
+
+.tijd select,
+option{
+  font-family: 'Lato', sans-serif;
+  font-size: 80%;
+  font-weight: 300;
+}
+
+.tijd select{
+  background-color: transparent;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+option{
+  background-color: #e67d22ce;
+  color: #fff;
+
+}
+
+.btn{
+  margin-left: 30px;
+  color: #d35400;
+  border-radius: 50px;
+  border: 1px solid #d35400;
+  background-color: #ecf0f1bd;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+  cursor: pointer;
+  padding: 10px;
+  font-family: 'Lato', sans-serif;
+  font-size: 70%;
+  font-weight: 300;
+}
+
+.btn:hover{
+  color: #d35400;
+  border: 1px solid #d35400;
+  background-color: rgba(255, 255, 255, 0.438)
+  
+}
+
+.btn:focus{
+  outline: none;
+}
+/*
+
+      
+      
+      
+    }
+
+    input.verstuur:hover,
+    input.verstuur:active{
+      color: #f39c12;
+      border: 1px solid #f39c12;
+      transition: background-color 0.2s, border 0.2s, color 0.2s;
+    }
+
+    */
 </style>
 </head>
 <body>
@@ -171,32 +246,34 @@ a{
       <li><a href="file:///C:/Users/31636/Documents/Reserveren/Tafels-reserveren/reservation.html">31 </a></li>
     </ul>
 
-    <br></br><label for="data">Kies een tijd:</label>
+    <div class="tijd">
+      <label for="data">Kies een tijd:</label>
 
-    <select name="data_drop" id="cars">
-      <option value="1100">11:00</option>
-      <option value="1130">11:30</option>
-      <option value="1200">12:00</option>
-      <option value="1230">12:30</option>
-      <option value="1300">13:00</option>
-      <option value="1330">13:30</option>
-      <option value="1400">14:00</option>
-      <option value="1430">14:30</option>
-      <option value="1500">15:00</option>
-      <option value="1530">15:30</option>
-      <option value="1600">16:00</option>
-      <option value="1630">16:30</option>
-      <option value="1700">17:00</option>
-      <option value="1730">17:30</option>
-      <option value="1800">18:00</option>
-      <option value="1830">18:30</option>
-      <option value="1900">19:00</option>
-      <option value="1930">19:30</option>
-      <option value="2000">20:00</option>
-      <option value="2030">20:30</option>
-      <option value="2100">21:00</option>
-    </select>
-    <button onclick="window.location.href='file:///C:/Users/31636/Documents/WT/health.html'">Selecteren</button>
+      <select name="data_drop" id="cars">
+        <option value="1100">11:00</option>
+        <option value="1130">11:30</option>
+        <option value="1200">12:00</option>
+        <option value="1230">12:30</option>
+        <option value="1300">13:00</option>
+        <option value="1330">13:30</option>
+        <option value="1400">14:00</option>
+        <option value="1430">14:30</option>
+        <option value="1500">15:00</option>
+        <option value="1530">15:30</option>
+        <option value="1600">16:00</option>
+        <option value="1630">16:30</option>
+        <option value="1700">17:00</option>
+        <option value="1730">17:30</option>
+        <option value="1800">18:00</option>
+        <option value="1830">18:30</option>
+        <option value="1900">19:00</option>
+        <option value="1930">19:30</option>
+        <option value="2000">20:00</option>
+        <option value="2030">20:30</option>
+        <option value="2100">21:00</option>
+      </select>
+      <button class="btn" onclick="window.location.href='file:///C:/Users/31636/Documents/WT/health.html'">Selecteren</button>
+    </div>
 </div>
 
 </body>

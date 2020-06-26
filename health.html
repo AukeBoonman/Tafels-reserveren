@@ -8,27 +8,31 @@
           padding: 0;
           box-sizing: border-box;
       }
-      html{
-          color: #2e3434;
+      html,
+      body{
+          color: rgb(54, 54, 54);
           font-family: 'Lato', sans-serif;
           font-size: 20px;
+          font-weight: 300;
+          background-image: linear-gradient(rgba(12, 12, 12, 0),rgba(12, 12, 12, 1)), url(https://cdn.pixabay.com/photo/2014/06/11/17/00/cook-366875_1280.jpg);
+          background-size: cover;
+          background-position: bottom;
+          background-attachment: fixed;
+          background-color:rgba(39, 39, 39, 0.9);
       }
+
       body{
-      background-image: linear-gradient(rgba(12, 12, 12, 0),rgba(12, 12, 12, 1)), url(https://cdn.pixabay.com/photo/2014/06/11/17/00/cook-366875_1280.jpg);
-      background-size: cover;
-      background-position: bottom;
-      background-attachment: fixed;
-      height: 100vh;
-      background-color:rgba(39, 39, 39, 0.9);
+      position: relative;
     }
 
+    /* --------- TEXT --------- */
     h1{
       position: absolute;
-      top: 10%;
+      top: 15%;
       left: 50%;
       transform: translate(-50%,-50%);
       color: #d35400;
-      font-size: 175%;
+      font-size: 250%;
       font-weight: 300;
       margin-bottom: 30px;
       text-transform: uppercase;
@@ -37,34 +41,137 @@
     h2{
       font-size: 150%;
       font-weight: 300;
-      margin-bottom: 30px;
+      margin: 70px 0 30px 0;
+      color: #d35400; 
     }
 
-    .health-questions{
-      position: absolute;
-      top: 60%;
+    .wanneer{
+      font-size: 120%;
+      color: #d35400;
+      font-weight: 400;
+      text-align: center;
+      padding-top: 70px;
+    }
+
+    /* --------- FORMULIER LAYOUT --------- */
+
+    form{
+      position: relative;
+      top: 270px;
       left: 50%;
-      transform: translate(-50%,-50%);
-      background-color: #ecf0f1c7;
+      transform: translate(-50%);
+      background-color: #ecf0f1ea;
       width: 900px;
-      padding: 40px;
+      padding: 10px 60px 80px 60px;
+      margin-bottom: 150px;
     }
 
     label{
       padding-left: 10px;
       line-height: 40px;
-      
       word-spacing: 2px;
     }
 
+    input.input-text{
+      margin: 10px 0;
+      width: 400px;
+    }
+    .opmerkingen{
+      padding-bottom: 80px;
+    }
+
+    .persoon,
+    .verkoudheid,
+    .contact-corona{
+      padding: 0 0 20px 30px;
+    }
+
+    input.verstuur{
+      margin: 50px 0 0 20px;
+      padding: 12px;
+      color: rgb(54, 54, 54);
+      border-radius: 50px;
+      border: 1px solid #d35400;
+      transition: background-color 0.2s, border 0.2s, color 0.2s;
+      font-family: 'Lato', sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+    }
+
+    input.verstuur:hover,
+    input.verstuur:active{
+      color: #f39c12;
+      border: 1px solid #f39c12;
+      transition: background-color 0.2s, border 0.2s, color 0.2s;
+    }
+
+    input{
+          background-color: #ecf0f1f5;
+          padding: 3px;
+          border: none;
+          color: rgb(73, 73, 73);
+          font-family: 'Lato', sans-serif;
+          font-size: 100%;
+          font-weight: 300;
+      }
+    input:focus{outline: none;
+    }
+
+    /*
     button{
       font-family: 'Lato', sans-serif;
       font-size: 20px;
       margin-top: 10px;
-    }
+    } */
+
+
     </style>
   </head>
+
+
+
   <body>
+    <h1>Tafel reserveren</h1>
+
+      <form>
+        <div class="wanneer">
+          <p>Reservering voor: (datum en tijd)</p>
+          <!-- display welke datum en tijd er gekozen is -->
+        </div>
+        <h2>Reserveringsgegevens</h2>
+        <div class="persoon">
+          <!--<label for="name">Naam</label>-->
+          <input class="input-text" type="text" placeholder="Naam"><br>
+          <!--<label for="guests">Hoeveel personen</label>-->
+          <input class="input-text" type="text" placeholder="Hoeveel personen"><br>
+          <!--<label for="phone">Telefoonnummer</label>-->
+          <input class="input-text" type="text" placeholder="Telefoonnummer"><br>
+          <input class="input-text opmerkingen" type="text" placeholder="Opmerkingen"><br>
+        </div>
+
+        <h2>Gezondheidsvragen</h2>
+        <div class="verkoudheid">
+          <label for="verkoudheid">Heeft u of iemand in uw gezeldschap last van verkoudheidsklachten?</label><br>
+          <input type="radio" id="ja-verkoudheid" name="verhoudheid" value="ja">
+          <label for="ja">ja</label><br>
+          <input type="radio" id="nee-verkoudheid" name="verhoudheid" value="nee">
+          <label for="nee">nee</label>
+        </div>
+
+        <div class="contact-corona">
+          <label for="contact-corona">Heeft u of iemand in uw gezeldschap contact gehad met Coronaklachten?</label><br>
+          <input type="radio" id="ja-contact-corona" name="contact-corona" value="ja">
+          <label for="ja">ja</label><br>
+          <input type="radio" id="nee-contact-corona" name="contact-corona" value="nee">
+          <label for="nee">nee</label>
+        </div>
+        <input class="verstuur" type="submit" value="Verstuur" onclick="window.location.href='file:///C:/Users/31636/Documents/WT/reservation.html'">
+      </form>
+
+
+
+
+<!--
     <h1>Gezondheidsvragen</h1>
     <div class="health-questions">
       <h2>Selecteer alles wat van toepassing is</h1>
@@ -83,9 +190,10 @@
         <input type="checkbox" id="health7" value="huisgenoot">
         <label for="health7"> Heeft u een huisgenoot/gezinslid met het coronavirus en heft u in de afgelopen 14 dagen contact met hem/haar gehad terwijl hij/zij nog klachten had?</label><br>
         <button onclick="window.location.href='file:///C:/Users/31636/Documents/WT/reservation.html'">Verstuur</button>
-
+    </div>
+      -->
         <!-- volgens mij is dit wel heel uitgebreid. Wat ik heb meegekregen vragen ze eigenlijk alleen of je verkoudheidsklachten hebt gehad of in contact bent geweest met iemand met Corona - totaal misschien 3 of 4 vragen maximaal... -->
 
-      </div>
+      
   <body>
 </html>
